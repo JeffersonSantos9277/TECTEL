@@ -1,3 +1,213 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;700;800&family=Josefin+Slab:ital,wght@0,200;1,100;1,200;1,300&family=Mulish:wght@200;300;400&display=swap');
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+*{ 
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+header{
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: right;
+    padding: 20px 0;
+}
+
+.logotipo h1{
+    margin-right: 20px;
+    padding: 5px 20px;
+    color: #fff;
+}
+
+.logotipo p{
+    float: left;
+    color: #fff;
+}
+
+.logotipo H2{
+    float: left;
+    color: #fff;
+}
+
+.titulo{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+}
+
+.titulo h1{
+    font-size: 3rem;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.botao{
+    position: absolute;
+    top: 75%;
+    left: 55%;
+}
+
+.botao button{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    letter-spacing: .1rem;
+    background-color: rgba(255, 217, 0, 0.815);
+
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+ a{
+     text-decoration: none;
+     color: black;
+ }
+
+ body{
+     font-family: arial;
+     background: url(/imagens/fundo.jpg);
+     background-size: 100%;
+     font-size: 1.5rem;
+ }
+
+ ul{
+     list-style: none;
+ }
+
+ img{
+     width: 40px;
+ }
+
+ input[type="checkbox"]{
+     display: none;
+ }
+
+ nav{
+     background-color: rgba(0, 0, 255, 0.5);
+     width: 350px;
+     height: 100%;
+     left: -350px;
+     position: absolute;
+     transition: all .5s;
+ }
+
+ input[type="checkbox"]:checked ~ nav{
+    transform: translateX(350px);
+ }
+
+ ul{
+     top: 70px;
+     position: absolute;
+     width: 100%;
+ }
+
+ a{
+    display: block;
+    padding: 20px 5px;
+    color: white;
+ }
+
+ a:hover{
+    background-color: rgb(176,224,230);
+    color: black;
+ }
+
+ label{
+     padding: 15px;
+     position: absolute;
+     z-index: 1;
+ }
+
+.produtos{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.produto img{
+    width: 80%;
+}
+
+.newsletter{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 255, 0.5);
+    position: relative;
+}
+
+.newsletter h3{
+    font-size: 1.8em;
+    color: #fff;
+}
+
+.newsletter p{
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.newsletter form{
+    width: 100%;
+    float: left;
+    margin-top: 9px;
+}
+
+fieldset {
+   border: medium none !important;
+   margin: 0 0 10px;
+   min-width: 100%;
+   padding: 0;
+   width: 100%;
+
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fff;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+
+
+.newsletter button{
+    width: 18%;
+    background-color: #fff;
+    padding: 15px 10px;
+    border-radius: 5px;
+    border-color: #fff;
+    float: left;
+    cursor: pointer;
+}
+
+
+ .rodape{
+     position: absolute;
+     top: 85%;
+    width: 100%;
+    float: left;
+    background-color: rgba(0, 0, 255, 0.5);
+    padding: 15px 5%;
+
+}
+.rodape p{
+    color: #fff;
+    font-size: 1.1rem;
+}
